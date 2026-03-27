@@ -1,0 +1,22 @@
+{
+  "expo": {
+    "name": "Notes",
+    "slug": "apexpro",
+    "scheme": "apexpro",
+    "android": {
+      "package": "com.apexpro.app",
+      "googleServicesFile": "./google-services.json"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "useLegacyPackaging": true
+          }
+        }
+      ]
+    ]
+  }
+}
