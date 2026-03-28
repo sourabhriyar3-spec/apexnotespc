@@ -1,22 +1,46 @@
 {
   "expo": {
     "name": "Notes",
-    "slug": "apexpro",
-    "scheme": "apexpro",
+    "slug": "apexnotespc",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "userInterfaceStyle": "automatic",
+    "experiments": {
+      "baseUrl": "/apexnotespc"
+    },
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
     "android": {
-      "package": "com.apexpro.app",
-      "googleServicesFile": "./google-services.json"
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.apex.notes"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
-      "expo-router",
-      [
-        "expo-build-properties",
-        {
-          "android": {
-            "useLegacyPackaging": true
-          }
-        }
-      ]
-    ]
+      "expo-router"
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "9c4070b9-f6d6-4fcf-b5c4-3f1dd1bd37d5"
+      }
+    },
+    "owner": "sourabhriyar1"
   }
 }
